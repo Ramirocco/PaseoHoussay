@@ -1,0 +1,24 @@
+* {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+.negrita {text-transform: uppercase;
+    font-weight:800;
+    color: map-get($map:$pallete, $key: primario);}
+
+.titulos{ 
+    font-size: calc(2rem + 1.5vh)
+    ;text-transform: uppercase;
+    color: map-get($map:$pallete, $key:secundario );
+    text-align: center;font-weight: 400;
+}
+
+.title {
+    padding-left: 15px;
+    text-transform: uppercase;
+    color: map-get($map:$pallete, $key: terciario );
+font-weight: 400;
+font-size: calc(1rem + 0.2vh);}
+
+.subtitle {
+    padding-left: 15px;
+    color: map-get($map:$pallete, $key: terciario );
+font-weight: 200; font-size: calc(0.8rem + 0.2vh);}

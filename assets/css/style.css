@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.vh100 {
+  height: 100vh;
+}
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.negrita, span {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #583774;
+}
+
+.titulos, .mainubica div p, .mainlocales h1, .mainevento h1, .mainidex div h1 {
+  font-size: calc(2rem + 1.5vh);
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  font-weight: 400;
+}
+
+.title, .mainlocales .tarjetas .tarjetalocal .desctarj .titulotarjeta, .mainevento .tarjetas .tarjetaevento .desctarj .titulotarjeta {
+  padding-left: 15px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: calc(1rem + 0.2vh);
+}
+
+.subtitle, .mainubica div .calle, .mainlocales .tarjetas .tarjetalocal .desctarj .desctarjeta, .mainevento .tarjetas .tarjetaevento .desctarj .desctarjeta {
+  padding-left: 15px;
+  color: #ffffff;
+  font-weight: 200;
+  font-size: calc(0.8rem + 0.2vh);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: #583774;
+  width: 100vw;
+  justify-content: space-between;
+  height: 60px;
+}
+header div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header div img {
+  width: 50px;
+  padding: 5px;
+}
+header div h2 {
+  color: #ffffff;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-right: 10px;
+}
+header nav ul li {
+  list-style: none;
+  padding: 1vw;
+}
+header nav ul li .activo {
+  font-weight: 800;
+}
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.mainidex {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-between;
+  height: calc(100vh - 100px);
+}
+.mainidex div {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainidex div h1 {
+  color: #583774;
+  text-align: center;
+}
+.mainidex div p {
+  color: #583774;
+  text-align: center;
+  padding: 10px 0 80px;
+}
+.mainidex img {
+  width: 60vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #583774;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+.footer p {
+  padding: 15px;
+  color: #ffffff;
+}
+.footer p a {
+  color: #ffffff;
+}
+.footer div {
+  padding: 0 20px;
+  align-items: center;
+}
+.footer div a {
+  padding: 0 5px;
+}
+.botonindex, .mainidex div button {
+  border: 1px solid;
+  border-color: #583774;
+  background-color: #ffffff;
+  padding: 5px 20px;
+}
+.botonindex a, .mainidex div button a {
+  color: #583774;
+  text-decoration: none;
+}
+
+.mainevento {
+  width: 100vw;
+  height: calc(100vh - 100px);
+}
+.mainevento h1 {
+  padding: 20px;
+}
+.mainevento .tarjetas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+.mainevento .tarjetas .tarjetaevento {
+  width: 25vw;
+  background-color: #000000;
+}
+.mainevento .tarjetas .tarjetaevento img {
+  width: 100%;
+}
+.mainevento .tarjetas .tarjetaevento .desctarj {
+  background-color: #000000;
+}
+.mainlocales {
+  width: 100vw;
+}
+.mainlocales h1 {
+  margin: 25px;
+}
+.mainlocales .tarjetas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100vw;
+}
+.mainlocales .tarjetas .tarjetalocal {
+  width: 216px;
+  background-color: #000000;
+  margin: 20px 30px;
+}
+.mainlocales .tarjetas .tarjetalocal img {
+  width: 100%;
+  height: 216px;
+}
+.mainlocales .tarjetas .tarjetalocal .desctarj {
+  background-color: #000000;
+  align-items: center;
+  padding: 5px 0;
+}
+.mainubica {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: calc(100vh - 100px);
+  align-items: center;
+}
+.mainubica div {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  align-items: center;
+}
+.mainubica div {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+}
+.mainubica div iframe {
+  background-color: black;
+  padding: 15px;
+}
+.mainubica div .calle {
+  color: #000000;
+  padding: 15px;
+}
+.mainubica div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-right: 10vw;
+}
+.mainubica div div a img {
+  width: 56px;
+  padding: 10px;
+}/*# sourceMappingURL=style.css.map */

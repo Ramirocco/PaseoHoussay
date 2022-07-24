@@ -1,0 +1,15 @@
+.mainidex{display: flex;
+    flex-direction: row; 
+    width: 100vw;
+    justify-content: space-between;
+    height: calc(100vh - 100px);
+        div {width: 40vw; display: flex;flex-direction: column; justify-content: center; align-items: center;
+            h1{@extend .titulos ;color: map-get($map:$pallete, $key: primario);text-align: center;
+                span{}
+            }
+            p{color: map-get($map:$pallete, $key: primario);text-align: center; padding: 10px 0 80px}
+            button{@extend .botonindex;
+                a{}
+            }
+        }
+        img {width:60vw; object-fit:cover;}}
