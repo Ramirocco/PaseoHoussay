@@ -1,0 +1,11 @@
+.mainquienes{max-width: 100vw; height: calc(100vh - 100px);
+    h1{@extend .titulos; padding: 20px;}
+    div{display: flex; flex-direction: row;width: 100%; justify-content: center;
+        img{width:30%; padding-left: 50px; padding-top: 20px;}
+        div{ display: flex; flex-direction: column;width: 50%;
+            p{@extend .subtitle;color: map-get($map:$pallete, $key:secundario ); font-size: calc(1rem + 1vh) ;padding: 20px 50px;
+                span{ text-transform: lowercase;}
+            }
+        }
+    }
+}

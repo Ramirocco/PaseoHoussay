@@ -1,8 +1,8 @@
-.mainubica{display: flex; flex-direction: row;width: 100vw; height: calc(100vh - 100px);align-items: center;
+.mainubica{display: flex; flex-direction: row;max-width: 100vw; height: calc(100vh - 100px);align-items: center;
     div{display: flex;flex-direction: column;width: 20vw; align-items: center;
         p{@extend .titulos}
         p{span{}}}
-    div{display: flex; flex-direction: column;width: 70vw;
+    div{display: flex; flex-direction: column;width: 65vw;
         iframe{background-color: black; padding: 15px}
         .calle{ @extend .subtitle; color: map-get($map:$pallete, $key:secundario ); padding: 15px;}
         div{display: flex;flex-direction: row; justify-content: end; padding-right: 10vw;
