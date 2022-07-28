@@ -1,4 +1,4 @@
-* {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+* {font-family: 'Raleway', sans-serif;}
 
 .negrita {text-transform: uppercase;
     font-weight:800;
@@ -22,3 +22,8 @@ font-size: calc(1rem + 0.2vh);}
     padding-left: 15px;
     color: map-get($map:$pallete, $key: terciario );
 font-weight: 200; font-size: calc(0.8rem + 0.2vh);}
+
+.paseoletter{color:map-get($map:$pallete, $key:terciario);font-weight: 400;};
+.houssayletter {color:map-get($map:$pallete, $key:terciario); font-weight: 800;text-transform:uppercase;font-weight: calc(1rem + 1.5vh);};
+
+.anav {color: map-get($map:$pallete, $key: terciario);text-decoration: none;font-size: calc(1rem + 0.3vh);}

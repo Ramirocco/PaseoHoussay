@@ -1,4 +1,4 @@
-.mainubica{display: flex; flex-direction: row;max-width: 100vw; height: calc(100vh - 100px);align-items: center;
+.mainubica{display: flex; flex-direction: row;max-width: 100vw; min-height: calc(100vh - 140px);align-items: center;
     div{display: flex;flex-direction: column;width: 20vw; align-items: center;
         p{@extend .titulos}
         p{span{}}}

@@ -9,13 +9,13 @@
 }
 
 * {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .negrita, span {
   text-transform: uppercase;
   font-weight: 800;
-  color: #583774;
+  color: rgb(101, 48, 143);
 }
 
 .titulos, .mainquienes h1, .mainubica div p, .mainlocales h1, .mainevento h1, .mainidex div h1 {
@@ -29,38 +29,57 @@
 .title, .mainlocales .tarjetas .tarjetalocal .desctarj .titulotarjeta, .mainevento .tarjetas .tarjetaevento .desctarj .titulotarjeta {
   padding-left: 15px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   font-weight: 400;
   font-size: calc(1rem + 0.2vh);
 }
 
 .subtitle, .mainquienes div div p, .mainubica div .calle, .mainlocales .tarjetas .tarjetalocal .desctarj .desctarjeta, .mainevento .tarjetas .tarjetaevento .desctarj .desctarjeta {
   padding-left: 15px;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   font-weight: 200;
   font-size: calc(0.8rem + 0.2vh);
+}
+
+.paseoletter, header .paseoyimg .paseo {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+}
+
+.houssayletter, header .paseoyimg .houssay {
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-weight: calc(1rem + 1.5vh);
+}
+
+.anav, header nav ul li a, header nav ul li .activo {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: calc(1rem + 0.3vh);
 }
 
 header {
   display: flex;
   flex-direction: row;
-  background-color: #583774;
+  background-color: rgb(40, 35, 95);
   max-width: 100vw;
   justify-content: space-between;
-  height: 60px;
-}
-header div {
-  display: flex;
-  padding-left: 15px;
-  flex-direction: row;
   align-items: center;
+  height: 100px;
 }
-header div img {
+header .paseoyimg {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+header .paseoyimg .iconsup {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+header .paseoyimg .paseoimg {
   width: 50px;
-  padding: 5px;
-}
-header div h2 {
-  color: #ffffff;
 }
 header nav {
   padding-right: 10px;
@@ -76,17 +95,12 @@ header nav ul li {
 header nav ul li .activo {
   font-weight: 800;
 }
-header nav ul li a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
 .mainidex {
   display: flex;
   flex-direction: row;
   width: 100vw;
   justify-content: space-between;
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 140px);
 }
 .mainidex div {
   width: 40vw;
@@ -96,11 +110,11 @@ header nav ul li a {
   align-items: center;
 }
 .mainidex div h1 {
-  color: #583774;
+  color: rgb(101, 48, 143);
   text-align: center;
 }
 .mainidex div p {
-  color: #583774;
+  color: rgb(101, 48, 143);
   text-align: center;
   padding: 10px 0 80px;
 }
@@ -113,18 +127,18 @@ header nav ul li a {
 .footer {
   display: flex;
   flex-direction: row;
-  background-color: #583774;
+  background-color: rgb(40, 35, 95);
   max-width: 100vw;
   justify-content: space-between;
   align-items: center;
   height: 40px;
 }
 .footer p {
-  padding: 15px;
-  color: #ffffff;
+  padding: 0 15px;
+  color: rgb(255, 255, 255);
 }
 .footer p a {
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
 .footer div {
   padding: 0 20px;
@@ -135,18 +149,18 @@ header nav ul li a {
 }
 .botonindex, .mainidex div button {
   border: 1px solid;
-  border-color: #583774;
-  background-color: #ffffff;
+  border-color: rgb(101, 48, 143);
+  background-color: rgb(255, 255, 255);
   padding: 5px 20px;
 }
 .botonindex a, .mainidex div button a {
-  color: #583774;
+  color: rgb(101, 48, 143);
   text-decoration: none;
 }
 
 .mainevento {
   max-width: 100vw;
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 140px);
 }
 .mainevento .tarjetas {
   display: flex;
@@ -177,12 +191,13 @@ header nav ul li a {
   flex-wrap: wrap;
   justify-content: space-around;
   max-width: 100vw;
+  gap: 30px;
 }
 .mainlocales .tarjetas .tarjetalocal {
   width: 216px;
   background-color: #000000;
-  padding: 0 0 20px 0;
-  margin-top: 15px;
+  padding: 0 0 15px 0;
+  margin: 20px 0;
 }
 .mainlocales .tarjetas .tarjetalocal img {
   width: 100%;
@@ -197,7 +212,7 @@ header nav ul li a {
   display: flex;
   flex-direction: row;
   max-width: 100vw;
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 140px);
   align-items: center;
 }
 .mainubica div {
@@ -232,7 +247,7 @@ header nav ul li a {
 
 .mainquienes {
   max-width: 100vw;
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 140px);
 }
 .mainquienes h1 {
   padding: 20px;
@@ -260,4 +275,7 @@ header nav ul li a {
 }
 .mainquienes div div p span {
   text-transform: lowercase;
+}
+.mainquienes div div p .paseohoussayQuien {
+  text-transform: none;
 }/*# sourceMappingURL=style.css.map */
