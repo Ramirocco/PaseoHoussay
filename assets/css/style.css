@@ -102,6 +102,13 @@ header nav ul li .activo {
   justify-content: space-between;
   min-height: calc(100vh - 140px);
 }
+@media (max-width: 480px) {
+  .mainidex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
 .mainidex div {
   width: 40vw;
   display: flex;
@@ -122,6 +129,11 @@ header nav ul li .activo {
   width: 60vw;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 480px) {
+  .mainidex img {
+    width: 100%;
+  }
 }
 
 .footer {
